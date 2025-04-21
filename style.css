@@ -1,17 +1,71 @@
-/* style.css */
+@font-face {
+    font-family: "FX_LED";
+    src: url("fonts/FX-LED.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Hack";
+    src: url("fonts/Hack-Bold.ttf") format("truetype");
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-  
+  background-color: rgb(238, 238, 251);
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  height; 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.digital-clock {
+    background-color: #110e0e;
+    color: #fff;
+    display: flex;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
+    border: 0.5rem solid #efe8e8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+.week {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-family: "Hack";
+}
+
+.week .active {
+    color: white;
+}
+
+.time {
+    font-family: "FX_LED";
+}
+
+.hour,
+.min,
+.dot {
+    display: inline-block;
+    font-size: 13rem;
+}
+
+.min {
+    display: math;
+}
+
+.invsible {
+    visibility: hidden;
+}
